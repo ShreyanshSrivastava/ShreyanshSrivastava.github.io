@@ -42,8 +42,8 @@ h2{
 }
 
 .navbar ul{
-  float: right;
-  text-align: right;
+  float:left;
+  text-align:left;
 }
 
 .nav-item{
