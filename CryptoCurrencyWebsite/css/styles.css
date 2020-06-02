@@ -1,16 +1,22 @@
 .navbar{
 background-color: #42455a;
-margin-bottom:100px;
+margin-bottom:-60px;
 margin-top:30px;
-margin-left: -10px;
-margin-right:40px;
 
 }
 
 body{
   background-color: #42455a !important;
 
+
 }
+
+.webpage{
+  position: relative;
+  overflow: hidden;
+}
+
+
 
 .logo{
   width:40px;
@@ -33,9 +39,9 @@ body{
 
 }
 
-.navbar-toggler{
+/* .navbar-toggler{
   margin-right:-90px;
-}
+} */
 .play-btn{
  height:50px;
  width:50px;
@@ -49,10 +55,8 @@ body{
 }
 
 .vector-img{
-  wdith:300px;
-  height:500px;
-  margin-top:-100px;
-  margin-left:-5px;
+  width: 100%;
+  height: 100%;
 }
 
 .nav-link{
@@ -73,8 +77,8 @@ body{
 }
 
 .left-section h1{
-  font-size:43px;
-  width:640px;
+  font-size:2.68rem;
+  /* width:640px; */
 }
 
 .left-section p{
@@ -84,6 +88,10 @@ body{
   line-height: 25px;
   color:#919191;
 
+}
+
+.right-section{
+  margin-top:-135px;
 }
 
 
@@ -101,11 +109,22 @@ small{
 
 .footer-section{
 
-  margin-bottom:0px;
+  display: inline-block;
   background: linear-gradient(to right, #db1bf6 ,#19d7f8);
 }
 
-.footer-section .row div p{
+.footer-section ul{
+  padding: initial;
+  margin-bottom: 0px;
+}
+
+.footer-section ul li{
+  list-style-type: none;
+  display:inline-block;
+  padding: 10px 25px;
+}
+
+.footer-section ul li p{
   color: #fff;
   font-size:10px;
   margin-bottom: 5px;
@@ -113,12 +132,12 @@ small{
 
 
 
-.footer-section .row div{
+.footer-section ul li{
   text-align: center;
 }
 
 
-.footer-section .row div .fa{
+.footer-section ul li .fa{
   color:#fff;
   font-size: 25px;
   margin-bottom: 8px;
@@ -127,17 +146,23 @@ small{
 
 
 .social-icons{
-  position: relative;
-  left:20px;
-  top:-10px;
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%);
+  position: sticky;
+  z-index: 1;
+  width: 70px;
 }
 
 
 .social-icons ul{
-  position:absolute;
-  right:30px;
-  bottom:0px;
+
+
+  margin-bottom: 0;
+  padding: 0 30px 0 0;
+
 }
+
 .social-icons ul li{
   list-style-type: none;
   margin-top:10px;
@@ -157,3 +182,8 @@ small{
   left:19px;
   bottom: 15px;
 }
+
+
+  .container{
+    padding-left: 50px !important;
+  }
