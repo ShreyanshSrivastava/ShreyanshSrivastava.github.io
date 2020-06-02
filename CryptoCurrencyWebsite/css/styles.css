@@ -187,3 +187,11 @@ small{
   .container{
     padding-left: 50px !important;
   }
+
+  @media (max-width:767px){
+
+    .right-section{
+      margin-top:-60px;
+      margin-left:-50px;
+    }
+  }
