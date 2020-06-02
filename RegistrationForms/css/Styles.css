@@ -9,6 +9,7 @@ body{
   text-align: center;
   color: #fff;
   padding: 1.875rem;
+
 }
 
 .register-left p{
@@ -41,6 +42,7 @@ body{
   padding:3.125rem;
   border-top-left-radius: 10% 50%;
   border-bottom-left-radius: 10% 50%;
+
 
 }
 
@@ -76,4 +78,24 @@ body{
 
   0%{transform: translateY(0);}
   100%{transform: translateY(-1.25rem);}
+}
+
+@media (max-width:767px) {
+
+  .register-right{
+    margin-bottom: 50px;
+
+  }
+
+  .register-left{
+    margin-top: -70px;
+  }
+}
+
+@media (max-width:577px) {
+
+  .register-right{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
