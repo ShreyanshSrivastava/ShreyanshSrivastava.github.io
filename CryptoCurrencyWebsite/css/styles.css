@@ -198,3 +198,9 @@ small{
       margin-left:-2.5rem;
     }
   }
+
+  @media (max-width:420px){
+    .footer-section ul li{
+     padding: 0.3125rem 0.625rem;
+    }
+  }
