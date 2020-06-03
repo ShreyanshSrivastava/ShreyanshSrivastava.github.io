@@ -183,6 +183,9 @@ small{
   bottom: 0.9375rem;
 }
 
+.responsive{
+  width: 100% !important;
+}
 
   .container{
     padding-left: 3.125rem!important;
@@ -192,6 +195,6 @@ small{
 
     .right-section{
       margin-top:-3.75rem;
-      margin-left:-3.125rem;
+      margin-left:-2.5rem;
     }
   }
