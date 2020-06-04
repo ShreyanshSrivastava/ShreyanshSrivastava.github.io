@@ -3,7 +3,7 @@
 import {update as updateSnake, draw as drawSnake, SNAKE_SPEED} from './snake.js';
 
 var lastRender = 0;
-
+var gameBoard = document.getElementById('game-board');
 
 
 function main(currentTime){
@@ -28,5 +28,5 @@ function update(){
 }
 
 function draw(){
-  drawSnake();
+  drawSnake(gameBoard);
 }
