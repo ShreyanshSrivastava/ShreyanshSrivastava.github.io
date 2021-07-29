@@ -1,0 +1,2250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TasteCard Webpage</title>
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fontawesome cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <header id="header">
+
+        <div class="header">
+
+            <div id="logo-search-boxes">
+                <div id="logo">
+                    <img src="img/Logo.png" class=" logo" alt="tastecard-logo">
+                </div>
+
+                <div id="search-boxes">
+                    <div class="search-box">
+                        <i class="fa fa-search"></i>
+                        <input type="text" placeholder="e.g. restaurant name, cuisine, cinema">
+
+                    </div>
+
+                    <div class="search-box">
+                        <i class="fa fa-map-marker"></i>
+                        <input type="text" placeholder="e.g. town, city, street">
+
+                    </div>
+
+                    <i class="fa fa-times-circle"></i>
+
+
+
+                </div>
+
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li>
+                        <i class="fa fa-search"></i>
+                        <a href="#">Search Restaurants</a>
+                    </li>
+                    <li>
+                        <a href="#"> Popular Searches</a>
+                        <i class="fa fa-angle-down"></i>
+
+
+                    </li>
+                    <li>
+                        <a href="#">How To Use</a>
+                        <i class="fa fa-angle-down"></i>
+
+
+                    </li>
+                    <li>
+                        <a href="#">tastecard+</a>
+                    </li>
+                    <li>
+                        <a href="#">Delivery & Collection</a>
+                    </li>
+                    <li>
+                        <button id="header-btn">Try Tastecard</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+
+    </header>
+
+    <div id="main">
+
+        <div id="side-menu-lg-scr" style="overflow-y: scroll;">
+
+            <div class="filters">
+
+                <i class="fa fa-bars"></i>
+                <span>Filters</span>
+
+            </div>
+
+            <div class="filter-info">
+                <strong>Dining filters applied</strong>
+            </div>
+
+            <div class="search-item">
+                <strong>Refine dining search
+                </strong>
+                <i class="fa fa-angle-down dropdown-1"></i>
+            </div>
+
+            <div class="search-options">
+                <div class="option">
+                    <i class="fa fa-cutlery"></i>
+                    <span>Restaurants & Takeout</span>
+                    <i class="fa fa-angle-right sub-dropdown"></i>
+
+                    <div class="sub-options">
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="res&tak" id="restaurant">
+                            <span></span>
+                            <label for="restaurant">Restaurants</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="res&tak" id="deilvery">
+                            <span></span>
+                            <label for="deilvery">Delivery</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="res&tak" id="collection">
+                            <span></span>
+                            <label for="collection">Collection</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="option">
+                    <i class="fa fa-gift"></i>
+                    <span>offer type</span>
+                    <i class="fa fa-angle-right sub-dropdown"></i>
+                    <div class="sub-options">
+                        <div class="sub-choices">
+
+                            <input type="radio" name="offer" id="meal">
+                            <span></span>
+                            <label for="meal">2 for 1 meal</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="offer" id="discount">
+                            <span></span>
+                            <label for="discount">50% discount</label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="option">
+                    <i class="fa fa-user"></i>
+                    <span>Party size</span>
+                    <i class="fa fa-angle-right sub-dropdown"></i>
+                    <div class="sub-options">
+
+                    </div>
+                </div>
+
+                <div class="option">
+                    <i class="fa fa-calendar"></i>
+                    <span>Availability</span>
+                    <i class="fa fa-angle-right sub-dropdown"></i>
+
+                    <div class="sub-options">
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="availability" id="allDays">
+                            <span></span>
+                            <label for="allDays">All Days</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="availability" id="saturday">
+                            <span></span>
+                            <label for="saturday">Saturday</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="availability" id="sunday">
+                            <span></span>
+                            <label for="sunday">Sunday</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="availability" id="monday">
+                            <span></span>
+                            <label for="monday">Monday</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="availability" id="tuesday">
+                            <span></span>
+                            <label for="tuesday">Tuesday</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="availability" id="wednesday">
+                            <span></span>
+                            <label for="wednesday">Wednesday</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="availability" id="thurday">
+                            <span></span>
+                            <label for="thurday">Thursday</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="availability" id="friday">
+                            <span></span>
+                            <label for="friday">Friday</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="availability" id="december">
+                            <span></span>
+                            <label for="december">5December</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="option">
+                    <i class="fa fa-home"></i>
+                    <span>Restaurant type</span>
+                    <i class="fa fa-angle-right sub-dropdown"></i>
+
+                    <div class="sub-options">
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="restaurant-type" id="resType">
+                            <span></span>
+                            <label for="resType">Independent Restaurant</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="restaurant-type" id="resType">
+                            <span></span>
+                            <label for="resType">Brand Restaurant</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="option">
+                    <i class="fa fa-glass"></i>
+                    <span>Cuisine</span>
+                    <i class="fa fa-angle-right sub-dropdown"></i>
+
+                    <div class="sub-options">
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="African" id="African">
+                            <span></span>
+                            <label for="African">African</label>
+
+                        </div>
+
+                        <div class="sub-choices">
+
+
+                            <input type="radio" name="American" id="American">
+                            <span></span>
+                            <label for="American">American</label>
+
+                        </div>
+
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="cuisine" id="Argentinean">
+                            <span></span>
+                            <label for="Argentinean">Argentinean</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="bangladeshi" id="Asian">
+                            <span></span>
+                            <label for="Asian">Bangladeshi</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="belgian" id="Belgian">
+                            <span></span>
+                            <label for="Belgian">Belgian</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="brazillian" id="Brazillian">
+                            <span></span>
+                            <label for="Brazillian">Brazillian</label>
+                        </div>
+
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="british" id="British">
+                            <span></span>
+                            <label for="British">British</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="carvery" id="Carvery">
+                            <span></span>
+                            <label for="Carvery">Carvery/Buffet</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="chinese" id="Chinese">
+                            <span></span>
+                            <label for="Chinese">Chinese</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="cuban" id="Cuban">
+                            <span></span>
+                            <label for="Cuban">Cuban</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="curry" id="curry">
+                            <span></span>
+                            <label for="curry">Curry</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="desserts" id="Desserts">
+                            <span></span>
+                            <label for="Desserts">Desserts</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="easterneuropean" id="easterEuropean">
+                            <span></span>
+                            <label for="easterEuropean">Eastern European</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="ethopian" id="ethopian">
+                            <span></span>
+                            <label for="ethopian">Ethopian</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="french" id="french">
+                            <span></span>
+                            <label for="french">French</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="fusion" id="fusion">
+                            <span></span>
+                            <label for="fusion">Fusion</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="gastropub" id="gastroPub">
+                            <span></span>
+                            <label for="gastroPub">Gastro Pub</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="german" id="german">
+                            <span></span>
+                            <label for="german">German</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="goan" id="goan">
+                            <span></span>
+                            <label for="goan">Goan</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="greek" id="greel">
+                            <span></span>
+                            <label for="greel">Greek</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="grill" id="grill">
+                            <span></span>
+                            <label for="grill">Grill</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="halal" id="halal">
+                            <span></span>
+                            <label for="halal">Halal</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="healthyeating" id="healthyEating">
+                            <span></span>
+                            <label for="healthyEating">Healthy eating</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="hungarian" id="discount">
+                            <span></span>
+                            <label for="discount">Hungarian</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="indian" id="indian">
+                            <span></span>
+                            <label for="indian">Indian</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="italian" id="italian">
+                            <span></span>
+                            <label for="italian">Italian</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="international" id="international">
+                            <span></span>
+                            <label for="international">International</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="japnese" id="japnese">
+                            <span></span>
+                            <label for="japnese">Japnese</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="latin" id="latin">
+                            <span></span>
+                            <label for="latin">Latin</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="lebanese" id="lebanese">
+                            <span></span>
+                            <label for="lebanese">Lebanese</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="malaysian" id="alaysian">
+                            <span></span>
+                            <label for="malaysian">Malaysian</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="mediterranean" id="mediterranean">
+                            <span></span>
+                            <label for="mediterranean">Mediterranean</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="mexican" id="mexican">
+                            <span></span>
+                            <label for="mexican">Mexican</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="middleeastern" id="middleEastern">
+                            <span></span>
+                            <label for="middleEastern">Middle Eastern</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="modernenglish" id="modernEnglish">
+                            <span></span>
+                            <label for="modernEnglish">Modern English</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="moderneuropean" id="modernEuropean">
+                            <span></span>
+                            <label for="modernEuropean">Modern European</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="morroccan" id="morroccan">
+                            <span></span>
+                            <label for="morroccan">Morroccan</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="neplaese" id="nepalese">
+                            <span></span>
+                            <label for="nepalese">Nepalese</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="northamerican" id="northAfrican">
+                            <span></span>
+                            <label for="northAfrican">North African</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="oriental" id="oriental">
+                            <span></span>
+                            <label for="oriental">Oriental</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="pakistani" id="pakistani">
+                            <span></span>
+                            <label for="pakistani">Pakistani</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="panasian" id="panAsian">
+                            <span></span>
+                            <label for="panAsian">Pan Asian</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="persian" id="persian">
+                            <span></span>
+                            <label for="persian">Persian</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="pizza" id="pizza">
+                            <span></span>
+                            <label for="pizza">Pizza</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="polish" id="polish">
+                            <span></span>
+                            <label for="polish">Polish</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="polynesian" id="polynesian">
+                            <span></span>
+                            <label for="polynesian">Polynesian</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="portuguese" id="portuguese">
+                            <span></span>
+                            <label for="portuguese">Portuguese</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="punjabi" id="punjabi">
+                            <span></span>
+                            <label for="punjabi">Punjabi</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="russian" id="russian">
+                            <span></span>
+                            <label for="russian">Russian</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="scottish" id="scottish">
+                            <span></span>
+                            <label for="scottish">Scottish</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+
+                            <input type="radio" name="seafood" id="seaFood">
+                            <span></span>
+                            <label for="seaFood">Sea Food</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="southamerican" id="southAmerican">
+                            <span></span>
+                            <label for="southAmerican">South American</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="southindia" id="southIndian">
+
+                            <span></span>
+                            <label for="southIndian">South Indian</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="spanish" id="spanish">
+
+                            <span></span>
+                            <label for="spanish">Spanish</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="srilanka" id="sriLanka">
+
+                            <span></span>
+                            <label for="sriLanka">Sri Lanka</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="steak" id="steak">
+
+                            <span></span>
+                            <label for="steak">Steak</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="steak&grill" id="steak&grill">
+
+                            <span></span>
+                            <label for="steak&grill">Steak & Grill</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="sushi" id="sushi">
+
+                            <span></span>
+                            <label for="sushi">Sushi</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="tapas" id="tapas">
+
+                            <span></span>
+                            <label for="tapas">Tapas</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="thai" id="thai">
+                            <span></span>
+                            <label for="thai">Thai</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="turkish" id="turkish">
+                            <span></span>
+                            <label for="turkish">Turkish</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="vegan" id="vegan">
+                            <span></span>
+                            <label for="vegan">Vegan</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="vegetarian" id="vegetarian">
+                            <span></span>
+                            <label for="vegetarian">Vegetarian</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="veitnamese" id="veitnamese">
+                            <span></span>
+                            <label for="veitnamese">Vietnamese</label>
+                        </div>
+
+                        <div class="sub-choices">
+
+                            <input type="radio" name="weish" id="weish">
+                            <span></span>
+                            <label for="weish">Weish</label>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="search-item">
+                <strong>Refine cinema search</strong>
+                <i class="fa fa-angle-down dropdown-2"></i>
+                <div class="search-options">
+                    <div class="option">
+                        <i class="fa fa-video-camera"></i>
+                        <span>Venues</span>
+                        <i class="fa fa-angle-right"></i>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div id="restaurant-details">
+
+            <div id="grid-map-list">
+
+                <div class="grid active">
+                    <i class="fa fa-th-large"></i>
+                    <span>Grid</span>
+                </div>
+
+                <div class="map">
+                    <i class="fa fa-map-o"></i>
+                    <span>Map</span>
+                </div>
+
+                <div class="list">
+                    <i class="fa fa-list"></i>
+                    <span>List</span>
+                </div>
+
+                <div class="filter-option-small-screen">
+                    <i class="fa fa-bars"></i>
+                    <span>Filters</span>
+                </div>
+            </div>
+
+            <div id="all-restaurant-group">
+
+
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-description">
+
+                    <div class="restaurant-img-container">
+
+                        <div class="meal-details">
+                            <span>2 FOR 1 MEALS</span>
+                            <span>5 DAYS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="description-container">
+
+                        <div class="restaurant-type-address">
+                            <p class="restaurant-venue">2-4 The Arcade, Barnsley, S70 2QN</p>
+                            <p class="description-name"><strong>00BAR</strong></p>
+                            <p class="restaurant-type">British</p>
+                            <div class="advance-booking"><i class="fa fa-volume-control-phone"></i>
+                                <p>Call in advance</p>
+                            </div>
+                        </div>
+                        <div class="booking-days">
+                            <div class="booking-user">
+                                <img src="img/man.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-jan">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-feb">
+                                <img src="img/calender-cross.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                            <div class="booking-calender-may">
+                                <img src="img/calender.jpeg" style="width:30px; height:20px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="result-btn">
+
+                <button class="show-more-results">Show more results</button>
+            </div>
+
+
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9480.96315030219!2d-1.480556!3d53.553469!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7067fdc137abe65!2s00BAR!5e0!3m2!1sen!2sin!4v1599146608965!5m2!1sen!2sin"
+                    width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+
+        </div>
+
+    </div>
+
+    <section id="newsletter-section">
+        <h1>Sign up to our newsletter</h1>
+        <p>Subscribe to our newsletter to be the first to hear about exclusive offers and discounts.</p>
+
+        <div class="signup-info">
+
+            <input type="email" name="" id="" class="signup-email" placeholder="Email address">
+            <button class="signup-btn">SIGN UP<i class="fa fa-angle-right"></i></button>
+
+        </div>
+
+        <p class="privacy-policy-link"><a href="#">Please read our privacy policy</a></p>
+
+        <div id="company-info">
+            <div class="nav-links">
+                <span class="heading">About us<i class="fa fa-angle-right"></i></span>
+                <ul class="links-list">
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">Our company</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">Customer testimonials</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">Why we're different</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">Our chosen charity</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">Work for us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-links">
+                <span class="heading">How can we help?<i class="fa fa-angle-right"></i></span>
+                <ul class="links-list">
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">Contact us</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">FAQs</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">Restaurant oppurtunities</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">Loyalty Platforms</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">Employee Benefits</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">Customer Rewards</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">Sitemap</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-links">
+                <span class="heading">Get started<i class="fa fa-angle-right"></i></span>
+                <ul class="links-list">
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">How To Use</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">Buy A tastecard</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">BuyA tastecard Gift</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">Student Beans</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">Student, Youth & Apprenticeships</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-links">
+                <span class="heading">Stay involved<i class="fa fa-angle-right"></i></span>
+                <ul class="links-list">
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">Newsletter Sign Up</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">tasteblog</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">Recommend Restaurants</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">Restaurant Reviews</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-right"></i>
+                        <a href="#">tastecard + offers</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="ratings-social-media">
+            <div class="rating">
+                <i class="fa fa-star first-star"></i>
+                <span>Trustpilot</span><br>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star last-star"></i><br>
+                <span>TrustScore <span class="number">3.8</span>
+                </span><br>
+                <span><span class="number">20,334</span> reviews</span>
+
+            </div>
+
+            <div class="social-media">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-pinterest-p"></i>
+                <i class="fa fa-youtube"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <footer id="footer">
+        <img src="img/ukas.png" alt="ukas-logo" class="footer-ukas-img">
+        <span class="copyright-company-info">Registered in England 05545626, Taste Marketing Limited, Birkby Grange, 85
+            Birkby Hall Road, Birkby, Huddersfield, HD2 2XB</span>
+        <div class="payment-partners">
+            <img src="img/ukas.png" alt="ukas-logo" class="payment-partner-logo">
+            <img src="img/visa.png" alt="visa-logo" class="payment-partner-logo">
+            <img src="img/mastercard.png" alt="ms-logo" class="payment-partner-logo">
+            <img src="img/paypal.png" alt="pp-logo" class="payment-partner-logo">
+        </div>
+        <span class="copyright-company-info">© 2006 - 2020 tastecard | Privacy Policy | Terms of Website Use | Terms and
+            Conditions of Membership</span>
+
+    </footer>
+
+    <script>
+
+        var dropdown_1 = document.getElementsByClassName('dropdown-1')[0];
+        var dropdown_2 = document.getElementsByClassName('dropdown-2')[0];
+
+        dropdown_1.onclick = function () {
+
+            if (dropdown_1.classList.contains('fa-angle-down')) {
+                dropdown_1.classList.remove('fa-angle-down');
+                dropdown_1.classList.add('fa-angle-right');
+                document.getElementsByClassName('search-options')[0].style.display = "none";
+            }
+            else {
+                dropdown_1.classList.remove('fa-angle-right');
+                dropdown_1.classList.add('fa-angle-down');
+                document.getElementsByClassName('search-options')[0].style.display = "block";
+            }
+
+        }
+
+
+        dropdown_2.onclick = function () {
+
+            if (dropdown_2.classList.contains('fa-angle-down')) {
+                dropdown_2.classList.remove('fa-angle-down');
+                dropdown_2.classList.add('fa-angle-right');
+                document.getElementsByClassName('search-options')[1].style.display = "none";
+            }
+            else {
+                dropdown_2.classList.remove('fa-angle-right');
+                dropdown_2.classList.add('fa-angle-down');
+                document.getElementsByClassName('search-options')[1].style.display = "block";
+            }
+
+        }
+
+        var option1 = document.getElementsByClassName('option')[0];
+        var subdropdown1 = document.getElementsByClassName('sub-dropdown')[0];
+
+        option1.onclick = function () {
+
+            if (subdropdown1.classList.contains('fa-angle-down')) {
+                subdropdown1.classList.remove('fa-angle-down');
+                subdropdown1.classList.add('fa-angle-right');
+                document.getElementsByClassName('sub-options')[0].style.display = "none";
+            }
+            else {
+                subdropdown1.classList.remove('fa-angle-right');
+                subdropdown1.classList.add('fa-angle-down');
+                document.getElementsByClassName('sub-options')[0].style.display = "block";
+            }
+        }
+
+        var option2 = document.getElementsByClassName('option')[1];
+        var subdropdown2 = document.getElementsByClassName('sub-dropdown')[1];
+
+        option2.onclick = function () {
+
+            if (subdropdown2.classList.contains('fa-angle-down')) {
+                subdropdown2.classList.remove('fa-angle-down');
+                subdropdown2.classList.add('fa-angle-right');
+                document.getElementsByClassName('sub-options')[1].style.display = "none";
+            }
+            else {
+                subdropdown2.classList.remove('fa-angle-right');
+                subdropdown2.classList.add('fa-angle-down');
+                document.getElementsByClassName('sub-options')[1].style.display = "block";
+            }
+        }
+
+        var option3 = document.getElementsByClassName('option')[2];
+        var subdropdown3 = document.getElementsByClassName('sub-dropdown')[2];
+
+        option3.onclick = function () {
+
+            if (subdropdown3.classList.contains('fa-angle-down')) {
+                subdropdown3.classList.remove('fa-angle-down');
+                subdropdown3.classList.add('fa-angle-right');
+                document.getElementsByClassName('sub-options')[2].style.display = "none";
+            }
+            else {
+                subdropdown3.classList.remove('fa-angle-right');
+                subdropdown3.classList.add('fa-angle-down');
+                document.getElementsByClassName('sub-options')[2].style.display = "block";
+            }
+        }
+
+        var option4 = document.getElementsByClassName('option')[3];
+        var subdropdown4 = document.getElementsByClassName('sub-dropdown')[3];
+
+        option4.onclick = function () {
+
+            if (subdropdown4.classList.contains('fa-angle-down')) {
+                subdropdown4.classList.remove('fa-angle-down');
+                subdropdown4.classList.add('fa-angle-right');
+                document.getElementsByClassName('sub-options')[3].style.display = "none";
+            }
+            else {
+                subdropdown4.classList.remove('fa-angle-right');
+                subdropdown4.classList.add('fa-angle-down');
+                document.getElementsByClassName('sub-options')[3].style.display = "block";
+            }
+        }
+
+        var option5 = document.getElementsByClassName('option')[4];
+        var subdropdown5 = document.getElementsByClassName('sub-dropdown')[4];
+
+        option5.onclick = function () {
+
+            if (subdropdown5.classList.contains('fa-angle-down')) {
+                subdropdown5.classList.remove('fa-angle-down');
+                subdropdown5.classList.add('fa-angle-right');
+                document.getElementsByClassName('sub-options')[4].style.display = "none";
+            }
+            else {
+                subdropdown5.classList.remove('fa-angle-right');
+                subdropdown5.classList.add('fa-angle-down');
+                document.getElementsByClassName('sub-options')[4].style.display = "block";
+            }
+        }
+
+        var option6 = document.getElementsByClassName('option')[5];
+        var subdropdown6 = document.getElementsByClassName('sub-dropdown')[5];
+
+        option6.onclick = function () {
+
+            if (subdropdown6.classList.contains('fa-angle-down')) {
+                subdropdown6.classList.remove('fa-angle-down');
+                subdropdown6.classList.add('fa-angle-right');
+                document.getElementsByClassName('sub-options')[5].style.display = "none";
+            }
+            else {
+                subdropdown6.classList.remove('fa-angle-right');
+                subdropdown6.classList.add('fa-angle-down');
+                document.getElementsByClassName('sub-options')[5].style.display = "block";
+            }
+        }
+
+
+
+
+
+        var filter_option_small_screen = document.getElementsByClassName('filter-option-small-screen')[0];
+        var side_menu_lg_scr = document.getElementById('side-menu-lg-scr');
+
+        filter_option_small_screen.onclick = function () {
+
+            if (side_menu_lg_scr.style.display == "none") {
+
+                side_menu_lg_scr.style.display = "block";
+            }
+            else {
+
+                side_menu_lg_scr.style.display = "none";
+            }
+        }
+
+        var map_btn = document.getElementsByClassName('map')[0];
+        var grid_btn = document.getElementsByClassName('grid')[0];
+        var list_btn = document.getElementsByClassName('list')[0];
+
+        map_btn.onclick = function () {
+
+            document.getElementById('all-restaurant-group').style.display = "none";
+            var list = document.getElementsByClassName('restaurant-description');
+            var i = 0;
+            for (i = 0; i <= list.length - 1; i++) {
+                document.getElementsByClassName('restaurant-description')[i].style.display = "block";
+                document.getElementsByClassName('restaurant-img-container')[i].style.height = "160px";
+                document.getElementsByClassName('restaurant-img-container')[i].style.backgroundSize = "100% 85%";
+                document.getElementsByClassName('description-container')[i].style.textAlign = "center";
+                document.getElementsByClassName('restaurant-venue')[i].style.margin = "0 5px 4px";
+                document.getElementsByClassName('advance-booking')[i].style.margin = "0px auto 10px";
+                document.getElementsByClassName('advance-booking')[i].style.justifyContent = "center";
+                document.getElementsByClassName('booking-days')[i].style.padding = "0px";
+                document.getElementsByClassName('booking-days')[i].style.justifyContent = "center";
+                document.getElementsByClassName('meal-details')[i].style.padding = "3px 8px";
+
+                if (screen.width <= 468) {
+                    document.getElementsByClassName('restaurant-description')[i].style.width = "40%";
+                }
+
+            }
+            document.getElementsByClassName('result-btn')[0].style.display = "none";
+            document.getElementById('map').style.display = "block";
+            map_btn.classList.add('active');
+            grid_btn.classList.remove('active');
+            list_btn.classList.remove('active');
+
+        }
+
+
+        grid_btn.onclick = function () {
+
+            document.getElementById('all-restaurant-group').style.display = "flex";
+            var list = document.getElementsByClassName('restaurant-description');
+            var i = 0;
+            for (i = 0; i <= list.length - 1; i++) {
+                document.getElementsByClassName('restaurant-description')[i].style.display = "block";
+                document.getElementsByClassName('restaurant-img-container')[i].style.height = "160px";
+                document.getElementsByClassName('restaurant-img-container')[i].style.backgroundSize = "100% 85%";
+                document.getElementsByClassName('description-container')[i].style.textAlign = "center";
+                document.getElementsByClassName('restaurant-venue')[i].style.margin = "0 5px 4px";
+                document.getElementsByClassName('advance-booking')[i].style.margin = "0px auto 10px";
+                document.getElementsByClassName('advance-booking')[i].style.justifyContent = "center";
+                document.getElementsByClassName('booking-days')[i].style.padding = "0";
+                document.getElementsByClassName('booking-days')[i].style.justifyContent = "center";
+                document.getElementsByClassName('meal-details')[i].style.padding = "3px 8px";
+
+
+                if (screen.width <= 468) {
+                    document.getElementsByClassName('restaurant-description')[i].style.width = "40%";
+                }
+
+
+            }
+            document.getElementsByClassName('result-btn')[0].style.display = "block";
+            document.getElementById('map').style.display = "none";
+            map_btn.classList.remove('active');
+            grid_btn.classList.add('active');
+            list_btn.classList.remove('active');
+
+        }
+
+        list_btn.onclick = function () {
+
+            document.getElementById('all-restaurant-group').style.display = "block";
+            var list = document.getElementsByClassName('restaurant-description');
+            var i = 0;
+            for (i = 0; i <= list.length - 1; i++) {
+
+                document.getElementsByClassName('restaurant-description')[i].style.display = "flex";
+                document.getElementsByClassName('restaurant-img-container')[i].style.flexBasis = "50%";
+                document.getElementsByClassName('restaurant-img-container')[i].style.height = "191px";
+                document.getElementsByClassName('restaurant-img-container')[i].style.backgroundSize = "101% 86%";
+                document.getElementsByClassName('description-container')[i].style.flexBasis = "50%";
+                document.getElementsByClassName('description-container')[i].style.textAlign = "left";
+                document.getElementsByClassName('restaurant-venue')[i].style.margin = "0 0 4px";
+                document.getElementsByClassName('advance-booking')[i].style.marginLeft = "0px";
+                document.getElementsByClassName('advance-booking')[i].style.justifyContent = "flex-start";
+                document.getElementsByClassName('booking-days')[i].style.padding = " 0 10px";
+                document.getElementsByClassName('booking-days')[i].style.justifyContent = "flex-start";
+                document.getElementsByClassName('meal-details')[i].style.padding = "14px 8px";
+
+                if (screen.width <= 468) {
+                    document.getElementsByClassName('restaurant-description')[i].style.width = "100%";
+                }
+
+            }
+
+            document.getElementsByClassName('result-btn')[0].style.display = "block";
+            document.getElementById('map').style.display = "none";
+            map_btn.classList.remove('active');
+            grid_btn.classList.remove('active');
+            list_btn.classList.add('active');
+
+        }
+
+
+
+        // footer JS
+
+        var heading_1 = document.getElementsByClassName('heading')[0];
+        var expand_or_squeeze_links_1 = heading_1.getElementsByClassName('fa')[0];
+        var linksList_1 = document.getElementsByClassName('links-list')[0];
+
+
+        expand_or_squeeze_links_1.onclick = function () {
+            if (expand_or_squeeze_links_1.classList.contains('fa-angle-right')) {
+                expand_or_squeeze_links_1.classList.remove('fa-angle-right');
+                expand_or_squeeze_links_1.classList.add('fa-angle-down');
+                linksList_1.style.display = "block";
+            }
+            else {
+                expand_or_squeeze_links_1.classList.remove('fa-angle-down');
+                expand_or_squeeze_links_1.classList.add('fa-angle-right');
+                linksList_1.style.display = "none";
+            }
+        }
+
+
+        var heading_2 = document.getElementsByClassName('heading')[1];
+        var expand_or_squeeze_links_2 = heading_2.getElementsByClassName('fa')[0];
+        var linksList_2 = document.getElementsByClassName('links-list')[1];
+
+
+        expand_or_squeeze_links_2.onclick = function () {
+            if (expand_or_squeeze_links_2.classList.contains('fa-angle-right')) {
+                expand_or_squeeze_links_2.classList.remove('fa-angle-right');
+                expand_or_squeeze_links_2.classList.add('fa-angle-down');
+                linksList_2.style.display = "block";
+            }
+            else {
+                expand_or_squeeze_links_2.classList.remove('fa-angle-down');
+                expand_or_squeeze_links_2.classList.add('fa-angle-right');
+                linksList_2.style.display = "none";
+            }
+        }
+
+
+        var heading_3 = document.getElementsByClassName('heading')[2];
+        var expand_or_squeeze_links_3 = heading_3.getElementsByClassName('fa')[0];
+        var linksList_3 = document.getElementsByClassName('links-list')[2];
+
+
+        expand_or_squeeze_links_3.onclick = function () {
+            if (expand_or_squeeze_links_3.classList.contains('fa-angle-right')) {
+                expand_or_squeeze_links_3.classList.remove('fa-angle-right');
+                expand_or_squeeze_links_3.classList.add('fa-angle-down');
+                linksList_3.style.display = "block";
+            }
+            else {
+                expand_or_squeeze_links_3.classList.remove('fa-angle-down');
+                expand_or_squeeze_links_3.classList.add('fa-angle-right');
+                linksList_3.style.display = "none";
+            }
+        }
+
+        var heading_4 = document.getElementsByClassName('heading')[3];
+        var expand_or_squeeze_links_4 = heading_4.getElementsByClassName('fa')[0];
+        var linksList_4 = document.getElementsByClassName('links-list')[3];
+
+
+        expand_or_squeeze_links_4.onclick = function () {
+            if (expand_or_squeeze_links_4.classList.contains('fa-angle-right')) {
+                expand_or_squeeze_links_4.classList.remove('fa-angle-right');
+                expand_or_squeeze_links_4.classList.add('fa-angle-down');
+                linksList_4.style.display = "block";
+            }
+            else {
+                expand_or_squeeze_links_4.classList.remove('fa-angle-down');
+                expand_or_squeeze_links_4.classList.add('fa-angle-right');
+                linksList_4.style.display = "none";
+            }
+        }
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
